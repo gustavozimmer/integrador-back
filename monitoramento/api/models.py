@@ -114,7 +114,7 @@ class Sensor(models.Model):
     
     
 class Leitura(models.Model):
-    sensor = models.ForeignKey(Sensor, on_delete=models.CASCADE, related_name="leituras",)
+    sensor = models.ForeignKey(Sensor, on_delete=models.PROTECT, related_name="leituras",)
 
     valor = models.DecimalField(max_digits=12, decimal_places=4,)
 
