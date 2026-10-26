@@ -327,3 +327,29 @@ class LeituraSerializer(serializers.ModelSerializer):
             )
 
         return sensor
+    
+
+class AuditLogSerializer(serializers.ModelSerializer):
+    username = serializers.CharField(
+        source="user.username",
+        read_only=True,
+        default=None,
+    )
+
+    class Meta:
+        model = AuditLog
+        fields = [
+            "id",
+            "user",
+            "username",
+            "action",
+            "model_name",
+            "object_id",
+            "object_repr",
+            "changes",
+            "timestamp",
+            "ip_address",
+            "request_method",
+            "request_path",
+        ]
+        read_only_fields = fields
