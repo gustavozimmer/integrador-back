@@ -1,0 +1,7 @@
+nome,descricao,is_active
+Estufa 1,Cultivo de hortaliças - setor norte,true
+Galpão A,Armazenagem de insumos,true
+Sala de Reuniões,Prédio administrativo - 2º andar,true
+Cozinha Industrial,Produção de refeições,true
+Recepção,Entrada principal,true
+Depósito Frio,Câmara fria desativada para manutenção,false

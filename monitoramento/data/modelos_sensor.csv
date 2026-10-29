@@ -1,0 +1,6 @@
+nome,fabricante,descricao
+DHT11,Aosong,Temperatura e umidade de baixo custo
+SHT31,Sensirion,Temperatura e umidade de alta precisão
+TSL2561,AMS,Sensor digital de luminosidade
+VEML7700,Vishay,Sensor de luz ambiente de alta faixa dinâmica
+AM312,Aosong,Sensor PIR miniatura de presença

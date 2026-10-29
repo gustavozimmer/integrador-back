@@ -133,6 +133,30 @@ class Leitura(models.Model):
     def __str__(self):
         return f"{self.sensor_id} - {self.valor} - {self.data_hora}"
     
+class Manutencao(models.Model):
+    sensor = models.ForeignKey(Sensor, on_delete=models.PROTECT, related_name="manutencoes",)
+
+    data_manutencao = models.DateTimeField(db_index=True,)
+
+    descricao = models.TextField()
+
+    responsavel = models.CharField(max_length=150,)
+
+    criado_em = models.DateTimeField(auto_now_add=True,)
+
+    class Meta:
+        db_table = "manutencoes"
+        ordering = ["-data_manutencao"]
+        verbose_name = "manutenção"
+        verbose_name_plural = "manutenções"
+        indexes = [
+            models.Index(fields=["sensor", "data_manutencao"], name="manut_sensor_data_idx"),
+        ]
+
+    def __str__(self):
+        return f"Sensor {self.sensor_id} - {self.data_manutencao:%Y-%m-%d} - {self.responsavel}"
+
+
 class AuditLog(models.Model):
 
     class Action(models.TextChoices):

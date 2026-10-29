@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'drf_spectacular',
     'api',
 ]
 
@@ -49,6 +51,42 @@ REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": [
     "api.permissions.PerfilPermission",
 ],
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+}
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": "API de Monitoramento",
+    "DESCRIPTION": (
+        "API para cadastro e consulta de locais, microcontroladores, sensores "
+        "e leituras, com auditoria das operações.\n\n"
+        "**Autenticação:** obtenha um token em `POST /api/auth/login/` e clique "
+        "em **Authorize** informando o token `access` (o prefixo `Bearer` é "
+        "adicionado automaticamente).\n\n"
+        "**Permissões:** qualquer usuário autenticado pode consultar (GET); "
+        "criar, alterar e excluir exige perfil de administrador."
+    ),
+    "VERSION": "1.0.0",
+    "SERVE_INCLUDE_SCHEMA": False,
+    "COMPONENT_SPLIT_REQUEST": True,
+    "SCHEMA_PATH_PREFIX": r"/api",
+    "SORT_OPERATIONS": False,
+    "TAGS": [
+        {"name": "Autenticação", "description": "Login e renovação de tokens JWT."},
+        {"name": "Usuários", "description": "Gestão de usuários (envio com `multipart/form-data`)."},
+        {"name": "Locais", "description": "Locais onde os equipamentos ficam instalados."},
+        {"name": "Modelos de equipamento", "description": "Catálogo de modelos de microcontroladores."},
+        {"name": "Microcontroladores", "description": "Equipamentos instalados, com MAC e coordenadas."},
+        {"name": "Modelos de sensor", "description": "Catálogo de modelos de sensores."},
+        {"name": "Sensores", "description": "Sensores ligados aos microcontroladores e seu resumo estatístico."},
+        {"name": "Leituras", "description": "Medições registradas pelos sensores."},
+        {"name": "Manutenções", "description": "Registro de intervenções realizadas nos sensores."},
+        {"name": "Auditoria", "description": "Histórico das operações realizadas na API."},
+    ],
+    "SWAGGER_UI_SETTINGS": {
+        "persistAuthorization": True,
+        "displayRequestDuration": True,
+        "filter": True,
+    },
 }
 
 SIMPLE_JWT = {
