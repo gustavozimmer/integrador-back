@@ -22,7 +22,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.core.management.base import BaseCommand, CommandError
 from django.db import transaction
 
-from ...models import (
+from api.models import (
     Leitura,
     Local,
     Microcontrolador,
@@ -30,7 +30,7 @@ from ...models import (
     ModeloSensor,
     Sensor,
 )
-from ...serializers import (
+from api.serializers import (
     LeituraSerializer,
     LocalSerializer,
     MicrocontroladorSerializer,
