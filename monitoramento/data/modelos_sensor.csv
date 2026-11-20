@@ -4,3 +4,8 @@ SHT31,Sensirion,Temperatura e umidade de alta precisão
 TSL2561,AMS,Sensor digital de luminosidade
 VEML7700,Vishay,Sensor de luz ambiente de alta faixa dinâmica
 AM312,Aosong,Sensor PIR miniatura de presença
+DHT22,Aosong,Temperatura e umidade (versão melhorada do DHT11)
+LDR 5mm,Generic,Sensor de luz dependente de resistência 5mm
+DS18B20,Maxim Integrated,Sensor de temperatura digital 1-Wire
+HC-SR501,Generic,Sensor PIR de movimento
+BH1750,Rohm,Sensor de luz ambiente I2C

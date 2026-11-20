@@ -1,4 +1,4 @@
 username,first_name,last_name,email,tipo_usuario,senha
 gestor.estufa,Helena,Martins,helena.martins@iot.local,ADMIN,senha12345
-op.galpao,Rafael,Costa,rafael.costa@iot.local,COMUM,senha12345
-op.noturno,Juliana,Ribeiro,juliana.ribeiro@iot.local,COMUM,senha12345
+op.galpao,Rafael,Costa,rafael.costa@iot.local,USER,senha12345
+op.noturno,Juliana,Ribeiro,juliana.ribeiro@iot.local,USER,senha12345

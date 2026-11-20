@@ -184,11 +184,11 @@ class Command(BaseCommand):
 
     def importar_leituras(self):
         def preparar(l):
-            sensor = Sensor.objects.get(
-                microcontrolador__mac_address__iexact=l["microcontrolador_mac"],
-                tipo=l["sensor_tipo"],
-            )
-            return {"sensor": sensor.pk, "valor": l["valor"], "data_hora": l["data_hora"]}
+            # leituras.csv tem sensor_id, valor, data_hora
+            sensor_id = l["sensor_id"]
+            # Verifica se o sensor existe
+            Sensor.objects.get(pk=sensor_id)
+            return {"sensor": sensor_id, "valor": l["valor"], "data_hora": l["data_hora"]}
 
         # a checagem de duplicidade compara sensor + data_hora (valor não entra na chave)
         def ja_existe(d):

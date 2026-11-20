@@ -4,3 +4,15 @@ STM32 Nucleo-F446RE,Galpão A,00:1B:44:11:3A:B2,-22.904960,-47.060430,Nó 2 - Ga
 Arduino Nano 33 IoT,Sala de Reuniões,00:1B:44:11:3A:B3,-22.904660,-47.060230,Nó 3 - Sala de Reuniões,true
 ESP32-S3 DevKitC,Cozinha Industrial,00:1B:44:11:3A:B4,-22.904360,-47.060030,Nó 4 - Cozinha Industrial,true
 ESP32-S3 DevKitC,Recepção,00:1B:44:11:3A:B5,-22.904060,-47.059830,Nó 5 - Recepção,true
+ESP32-S3 DevKitC,Estufa 1,A4:CF:12:00:10:01,-22.905260,-47.060630,Nó 6 - Estufa 1,true
+ESP32-S3 DevKitC,Estufa 1,A4:CF:12:00:10:02,-22.905260,-47.060630,Nó 7 - Estufa 1,true
+ESP32-S3 DevKitC,Estufa 1,A4:CF:12:00:10:03,-22.905260,-47.060630,Nó 8 - Estufa 1,true
+ESP32-S3 DevKitC,Estufa 1,A4:CF:12:00:10:04,-22.905260,-47.060630,Nó 9 - Estufa 1,true
+ESP32-S3 DevKitC,Estufa 1,A4:CF:12:00:10:05,-22.905260,-47.060630,Nó 10 - Estufa 1,true
+ESP32-S3 DevKitC,Estufa 1,A4:CF:12:00:10:06,-22.905260,-47.060630,Nó 11 - Estufa 1,true
+ESP32-S3 DevKitC,Estufa 1,A4:CF:12:00:10:07,-22.905260,-47.060630,Nó 12 - Estufa 1,true
+ESP32-S3 DevKitC,Estufa 1,A4:CF:12:00:10:08,-22.905260,-47.060630,Nó 13 - Estufa 1,true
+ESP32-S3 DevKitC,Estufa 1,A4:CF:12:00:10:09,-22.905260,-47.060630,Nó 14 - Estufa 1,true
+ESP32-S3 DevKitC,Estufa 1,A4:CF:12:00:10:0A,-22.905260,-47.060630,Nó 15 - Estufa 1,true
+ESP32-S3 DevKitC,Estufa 1,A4:CF:12:00:10:0B,-22.905260,-47.060630,Nó 16 - Estufa 1,true
+ESP32-S3 DevKitC,Estufa 1,A4:CF:12:00:10:0C,-22.905260,-47.060630,Nó 17 - Estufa 1,true
