@@ -262,6 +262,7 @@ py .\manage.py test api -v 2
 3. Clique em **Authorize**, cole o token e confirme.
 4. Expanda *Leituras → Listar leituras*, veja os parâmetros (`sensor`, `local`, `data_inicio`, `data_fim`, `ordering`) e clique em **Try it out → Execute**.
 5. Alternativas: http://127.0.0.1:8000/api/redoc/ (leitura) e http://127.0.0.1:8000/api/schema/ (arquivo OpenAPI).
+6. Caso queira acessar remotamente acesse https://gzimmer.alwaysdata.net/api/docs
 
 ### 7.5 Registro de manutenção
 
