@@ -1,21 +1,7 @@
-modelo_sensor_nome,microcontrolador_mac,tipo,unidade_medida,is_active
-DHT11,00:1B:44:11:3A:B1,TEMP,C,true
-SHT31,00:1B:44:11:3A:B1,UMID,%,true
-TSL2561,00:1B:44:11:3A:B1,LUMI,LUX,true
-AM312,00:1B:44:11:3A:B1,PASS,UN,true
-SHT31,00:1B:44:11:3A:B2,TEMP,C,true
-SHT31,00:1B:44:11:3A:B2,UMID,%,true
-VEML7700,00:1B:44:11:3A:B2,LUMI,LUX,true
-AM312,00:1B:44:11:3A:B2,PASS,UN,true
-DHT11,00:1B:44:11:3A:B3,TEMP,C,true
-SHT31,00:1B:44:11:3A:B3,UMID,%,true
-TSL2561,00:1B:44:11:3A:B3,LUMI,LUX,true
-AM312,00:1B:44:11:3A:B3,PASS,UN,true
-SHT31,00:1B:44:11:3A:B4,TEMP,C,true
-SHT31,00:1B:44:11:3A:B4,UMID,%,true
-VEML7700,00:1B:44:11:3A:B4,LUMI,LUX,true
-AM312,00:1B:44:11:3A:B4,PASS,UN,true
-DHT11,00:1B:44:11:3A:B5,TEMP,C,true
-SHT31,00:1B:44:11:3A:B5,UMID,%,true
-TSL2561,00:1B:44:11:3A:B5,LUMI,LUX,true
-AM312,00:1B:44:11:3A:B5,PASS,UN,true
+nome,descricao,is_active
+Estufa 1,Cultivo de hortaliças - setor norte,true
+Galpão A,Armazenagem de insumos,true
+Sala de Reuniões,Prédio administrativo - 2º andar,true
+Cozinha Industrial,Produção de refeições,true
+Recepção,Entrada principal,true
+Depósito Frio,Câmara fria desativada para manutenção,false

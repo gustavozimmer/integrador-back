@@ -1,7 +1,4 @@
-nome,descricao,is_active
-Estufa 1,Cultivo de hortaliças - setor norte,true
-Galpão A,Armazenagem de insumos,true
-Sala de Reuniões,Prédio administrativo - 2º andar,true
-Cozinha Industrial,Produção de refeições,true
-Recepção,Entrada principal,true
-Depósito Frio,Câmara fria desativada para manutenção,false
+nome,fabricante,descricao
+ESP32-S3 DevKitC,Espressif,Microcontrolador dual-core com Wi-Fi e BLE
+STM32 Nucleo-F446RE,STMicroelectronics,Placa ARM Cortex-M4 para prototipagem
+Arduino Nano 33 IoT,Arduino,Placa compacta com Wi-Fi e Bluetooth
